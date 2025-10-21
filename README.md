@@ -1,14 +1,2 @@
-# **L1NE Company**
-
-**Cloud-Native. Without Kubernetes. Without Containers.**
-
-L1NE is an ecosystem for fully reproducible infrastructure — built entirely on **NixOS**, with no containers, no Kubernetes, and no vendor lock-in.
-
-### **The L1NE Ecosystem**
-
-* **one-for-all** — local CI/CD and caching backbone. Develop, build, and share reproducible systems from your laptop to the cloud.
-* **l1ne** — a Kubernetes-like orchestrator for Nix. Declarative, self-healing, and production-ready — without orchestration complexity.
-
-We unify development and SRE in a single declarative flow where scalability is predictable, failures are recoverable, and infrastructure behaves like code.
-
-**L1NE — Declarative. Scalable. Containerless.**
+# L1ne
+**Abstract**. A reproducible model of software deployment allows systems to scale deterministically without relying on container runtimes or mutable environments, enabling a “build once, run anywhere” model within an agnostic multi-cloud paradigm. Containers simplify packaging but inherit the host kernel, depend on dynamic linking, and fragment reproducibility across platforms. L1ne introduces a containerless orchestration framework that manages workloads directly through systemd on NixOS, using Nix flakes as the single verifiable source of truth for both development and production. The control plane records and applies system state through immutable build artifacts stored in distributed object storage, allowing workloads to scale by reference rather than reconstruction. The prototype demonstrates this model on a single node, establishing the foundation for a distributed architecture that will coordinate through. By unifying build, deployment, integrated SRE, and runtime under one declarative definition, L1ne reduces configuration entropy and eliminates dependence on external orchestration layers. The system defines the basis for a NixOS-based ecosystem where infrastructure is reproducible by design and independent of proprietary cloud control planes.
